@@ -1,0 +1,19 @@
+{
+    "name": "SBGBook Addons",
+    "version": "1.0",
+    "description": "A few addons that I find helpful to SBGBook.",
+    "icons": {
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": {
+          "128": "icon.png"
+        }
+    },
+    "permissions": ["activeTab", "tabs", "<all_urls>"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "manifest_version": 2
+}
