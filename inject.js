@@ -14,8 +14,8 @@ if(document.domain.includes('sbgbook.xyz') && document.URL.includes('student') &
     setTimeout(() => {
         let score = 0;
         let total = 0;
-        document.querySelectorAll('.stdscore').forEach((a) => { score += Number(a.innerHTML); total += 10 });
-        document.querySelectorAll('.modal-body')[0].innerHTML = String(((score / total) * 100).toFixed(2)) + "%";
+        document.querySelectorAll('.scorehover').forEach((a) => { score += Number(a.innerHTML.split('<')[0]); total += 10 });
+        document.querySelectorAll('.overall-grade-text')[0].innerHTML = String(((score / total) * 100).toFixed(2)) + "%";
 
 //         const scorecards = document.querySelectorAll('[title="View scores/feedback"]');
 //         scorecards.forEach((a, idx) => {
